@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #C7AFF7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .card {
+      background: #fff;
+      padding: 30px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 10px 30px #8569e4;
+      width: 380px;
+      max-width: 90%;
+    }
+
+    .profile {
+      position: relative;
+      display: inline-block;
+      margin-bottom: 15px;
+    }
+
+    .profile img {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+    }
+
+    .check {
+      position: absolute;
+      bottom: 5px;
+      right: 5px;
+      background: #3700ff;
+      color: white;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+    }
+
+    h2 {
+      margin: 10px 0;
+      font-size: 20px;
+      color: #510993;
+      font-weight: bold;
+    }
+
+    .subscribers {
+      color: gray;
+      margin-bottom: 15px;
+    }
+
+    .desc {
+      margin-bottom: 15px;
+      font-size: 14px;
+      color: #8569E4;
+    }
+
+    .link {
+      color: #6B39BC;
+      font-size: 13px;
+      margin-bottom: 20px;
+      cursor: pointer;
+      animation: colorLoop 1.5s infinite ease-in-out;
+    }
+
+    .btn {
+      font-weight: 700;
+      color: #fff;
+      padding: 12px;
+      height: 50px;
+      border: none;
+      border-radius: 10px;
+      width: 100%;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.5s;
+      background: #6B39BC;
+      box-shadow: 0 8px 20px rgba(107, 57, 188, 0.4);
+      animation: pulse 1.5s infinite ease-in-out;
+    }
+
+    .btn:hover {
+      background: #510993;
+    }
+
+    .footer {
+      margin-top: 15px;
+      font-size: 12px;
+      color: gray;
+    }
+
+    .footer a {
+      color: #8569E4;
+      text-decoration: none;
+    }
+    
+    @keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.04);
+    }
+    100% {
+        transform: scale(1);
+    }
+        }
+
+    
+    @keyframes colorLoop {
+    0% {
+        color: #A68CEE;
+    }
+    50% {
+        color: #510993;
+    }
+    100% {
+        color: #A68CEE;
+    }
+        }
+
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="profile">
+      <img src="profile.jpg" alt="profile">
+      <div class="check">✔</div>
+    </div>
+
+    <h2 id="channelName">Mr. Dark Analysis</h2>
+    <div class="subscribers" id="subs">36,867 Subscribers</div>
+
+    <div class="desc">Join now for exclusive insights and daily tips.</div>
+
+    <div class="link" onclick="openTelegram()">Tap button to view in Telegram</div>
+
+    <button class="btn" onclick="joinChannel()">JOIN CHANNEL</button>
+
+    <div class="footer">
+      If you have Telegram, you can view and join this channel right away.<br><br>
+      <a href="#">Privacy</a> • <a href="#">Terms</a>
+    </div>
+  </div>
+
+  <script>
+    function openTelegram() {
+      alert("Redirecting to Telegram...");
+      window.location.href = "https://t.me/Mrdarktips";
+    }
+
+    function joinChannel() {
+      alert("Joining Channel...");
+      window.location.href = "https://t.me/Mrdarktips";
+    }
+  </script>
+
+</body>
+</html>
